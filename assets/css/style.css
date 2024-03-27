@@ -1,10 +1,90 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --header-bg: #10375c;
+}
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+}
+/* =========common=========== */
+.container {
+  width: 1170px;
+  max-width: calc(
+    100% - 48px
+  ); /* khi thu nhỏ chiều rộng trang web để nội dung cách le trai và le phai 1 khoang cách 24px*/
+  margin: 0 auto; /* nội dung canh giữa*/
+}
+
+a {
+  text-decoration: none; /*bỏ gạch chân thẻ a*/
+}
+
+.btn {
+  display: inline-block;
+  min-width: 205px;
+  line-height: 60px;
+  background: #2e80ce;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 999px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* =========header=========== */
+.header {
+  padding-top: 30px;
+  background: var(--header-bg);
+  min-height: 100vh;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between; /* dàn đều nội dung*/
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+}
+.header__action--login,
+.nav__link {
+  padding: 8px 21px;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+.nav__link:hover,                           /*gán thuộc tính hover có bóng giống Home*/
+.nav__link--active {
+  text-shadow: 1px 0 0 currentColor;
+  color: #ffffff;
+}
+
+.nav__link--active::before {
+  /* nut  trước chữ Home*/
+  content: "";
+  display: inline-block; /*dung de nhap kich thuoc vao vi thẻ inline nên k can thiep kich thuoc*/
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+  top: -3px; /*vị tri nut ben chu Home*/
+  position: relative; /*vị tri nut ben chu Home*/
+  right: 8px; /*vị tri nut ben chu Home*/
+}
+.header__action--signup {
+  min-width: 104px;
+  line-height: 44px;
+  font-size: 1.6rem;
+}
+.header__action--login {
+  margin-right: 7px; /*theo nav__link có padding trai phai 21px nen thêm right 7px la đu 28px*/
 }
