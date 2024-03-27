@@ -88,3 +88,63 @@ a {
 .header__action--login {
   margin-right: 7px; /*theo nav__link có padding trai phai 21px nen thêm right 7px la đu 28px*/
 }
+/* ===========hero============= */
+.hero {
+  display: flex;
+  padding-top: 76px;
+  align-items: center;
+}
+.hero__content {
+  width: 44%; /* lay chieu rong anh la 517/1170 la chieu rong trang*/
+}
+.hero__media {
+  flex: 1; /*chieu rong khoi phai bang khong gian con lai (1170-517)*/
+}
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -1.4px;
+}
+.hero__desc {
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.67; /* 166.667% */
+}
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: 38px;
+}
+.hero__phone {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+.hero__images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /*dich anh qua canh phai*/
+}
+.hero__img {
+  border-radius: 6px;
+  object-fit: cover; /*de khong bi meo anh*/
+}
+.hero__img--large {
+  width: 330px;
+  height: 540px;
+  margin-right: -6px; /*giua 2 anh co 1 khoang trồng lên nhau 6px*/
+  z-index: 1; /*ảnh 1 trồng lên trên ảnh 2*/
+}
+.hero__img--small {
+  width: 210px;
+  height: 410px;
+}
