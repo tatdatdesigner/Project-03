@@ -174,7 +174,7 @@ a {
 }
 .service__desc {
   width: 40%;
-  margin: 0 auto; /*vi thẻ p là block line nen chiếm hết chiều ngang khi ta giới hạn độ rộng thì dùng margin auto de canh giau*/
+  margin: 18px auto 0; /*vi thẻ p là block line nen chiếm hết chiều ngang khi ta giới hạn độ rộng thì dùng margin auto de canh giau*/
 }
 .service__row {
   padding-top: 70px;
@@ -232,4 +232,55 @@ a {
 }
 .service__btn {
   margin-top: 55px;
+}
+/* ==========work============ */
+.work {
+  background: #f6fbff;
+  padding: 100px 0;
+}
+.work__desc {
+  width: 468px;
+}
+.work__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin-top: 86px;
+}
+.work-item {
+  padding: 43px 42px;
+  height: 402px;
+  border: 16px solid #eaf6ff;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.25s;
+}
+.work-item:hover {
+  border-color: #2e80ce;
+  transform: translateY(-16px); /*item di chuyen len 16px*/
+}
+.work-item__heading {
+  margin-top: 18px;
+  color: #10375c;
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.38; /* 138.462% */
+}
+.work-item__desc {
+  margin-top: 28px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+.work-item__more {
+  margin-top: 18px;
+  display: inline-block; /*do thẻ a là inline nen dung margin top k ăn phai dung them display*/
+  color: #2e80ce;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
 }
