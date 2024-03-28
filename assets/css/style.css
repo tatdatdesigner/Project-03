@@ -404,3 +404,48 @@ a {
 .control-icon--next {
   rotate: 180deg;
 }
+/* =============install mobile================= */
+.install {
+  padding: 85px 0;
+}
+.install__inner {
+  position: relative;
+  height: 427px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+
+.install__img {
+  position: absolute;
+  bottom: 0;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+.install__content {
+  max-width: 586px;
+}
+.install__heading {
+  max-width: 489px;
+  color: #fff;
+}
+.install__desc {
+  color: #fff;
+}
+.install__row {
+  display: flex;
+  column-gap: 28px;
+  align-items: center;
+  margin-top: 28px;
+  color: #ffffff;
+}
+.install__btn-img {
+  width: 135px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
