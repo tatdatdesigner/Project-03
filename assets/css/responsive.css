@@ -1,0 +1,57 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* tablet & mobile */
+@media (max-width: 991.98px) {
+  /*1 ẩn navbar */
+  .navbar {
+    display: none;
+  }
+  /*2 chuyen logo vao giua */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  /*3 canh lại vi tri menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 38px;
+    left: 26px;
+    color: #fff;
+    width: 24px;
+  }
+  /* 4 overlay */
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0; /*tạo 1 lớp phủ*/
+    z-index: 1; /*ưu tiên cao hơn 1 lớp*/
+    /* điều kiện bình thường ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  /* 5 kiem tra neu checkbox được check thì hiện overlay */
+  .menu-checkbox: checked ~.menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* mobile */
+@media (min-width: 767.98px) {
+}
+
+/* tam an k lien quan */
+.hero,
+.footer,
+main {
+  display: none;
+}
