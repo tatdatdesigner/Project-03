@@ -332,7 +332,7 @@ a {
 .about__img {
   position: relative;
 }
-.about_img--big {
+.about__img--big {
   display: block;
   object-fit: cover;
   width: 512px;
@@ -340,7 +340,7 @@ a {
   border-radius: 6px;
   box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
 }
-.about_img--small {
+.about__img--small {
   position: absolute;
   top: 121px;
   left: 238px;

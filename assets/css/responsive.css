@@ -110,6 +110,29 @@
     width: 90%;
     text-align: start;
   }
+  /* work & about */
+  .work__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .about-row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .about__media {
+    width: 100%;
+  }
+  .about__img--small {
+    display: none;
+  }
+  .about__img--big {
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px auto;
+  }
+  .about-content {
+    width: 100%;
+  }
 }
 /* tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
